@@ -2,9 +2,6 @@ package com;
 
 import org.junit.jupiter.api.Test;
 
-import java.security.SecureRandom;
-import java.time.LocalDate;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerTest {
@@ -63,8 +60,8 @@ class CustomerTest {
     void test_ThatCustomerCanChooseTheirGender(){
     newCustomer = new Customer("Grace","Nelson","Sabo,Yaba",1991,10,21,"Female");
     newCustomer.setGender("male");
-    newCustomer.setGender("female");
     assertEquals("male",newCustomer.getGender());
+    newCustomer.setGender("female");
     assertEquals("female",newCustomer.getGender());
 }
 @Test
